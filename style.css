@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+    position: relative;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 60px;
+    color: rgb(165, 229, 249);
+    margin-left: 30px;
+}
+
+.name {
+    font-size: 60px;
+    color: rgb(0, 217, 255);
+    margin-right: 30px;
+}
+
+
+
+.addBookBtn {
+    margin-top: 50px;
+    padding: 20px;
+    font-family: serif;
+    font-size: 25px;
+    border: 5px solid black;
+    border-radius: 10px;
+    transition: color 0.2s, background-color 0.3s;
+}
+
+.addBookBtn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.addBookBtn:active {
+    color: red;
+}
+
+.form {
+    background-color: rgb(158, 226, 247);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#bookTitle,
+#bookAuthor,
+#pageNum {
+    width: 300px;
+    height: 35px;
+}
+
+.inputfield {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.inputfield input {
+    border-radius: 10px;
+    border: 1px solid rgb(148, 148, 148);
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+input[type="radio"] {
+    transform: scale(2);
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.form-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(56, 56, 56, 0.614);
+    z-index: 999;
+}
+
+.ac {
+    margin-top: 10px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: serif;
+    font-size: 25px;
+    border: 3px solid rgba(0, 0, 0, 0.478);
+    border-radius: 10px;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.ac:active {
+    background-color: black;
+    color: white;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.form-outer-container {
+    display: none;
+}
+
+.bookContainer {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.bookInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid red;
+    background-color: lightgreen; 
+    padding: 30px;
+    font-size: 40px;
+    border-radius: 7px;
+    box-shadow: -5px 5px 5px rgb(42, 42, 42);
+}
+
+.toggle {
+    width: max-content;
+    margin-top: 15px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: serif;
+    font-size: 20px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.toggle:active {
+    border-color: white;
+    background-color: black;
+    color: white;
+}
